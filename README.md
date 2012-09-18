@@ -53,6 +53,20 @@ To kick off a full build of Open webOS, type the following, (which may take two 
 
     $ make webos-image
 
+
+Using your own recipe files
+---------------------------
+
+The "mcf" script automatically clones the meta-webos repository from GitHub into the build-webos folder.  
+If adding a new component or testing a change to a recipe file, you will need to switch over to using your own clone of meta-webos:  
+* Delete the standard meta-webos folder from within the build-webos folder on your computer  
+* Copy the modified meta-webos folder and its contents under the build-webos folder  
+* Make the new or modified component to test your recipe  
+
+Caution: Rerunning the "mcf" script will overwrite the meta-webos folder in build-webos.  Keep a separate clone of meta-webos for your development work.  
+To be safe, delete the copy of meta-webos under the build-webos folder before running the "mcf" script.
+
+
 Running
 -------
 

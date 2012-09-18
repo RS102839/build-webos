@@ -8,3 +8,8 @@ downloads
 mcf.status
 sstate-cache
 tmp
+
+# Common Eclipse project files
+.project
+.cproject
+
